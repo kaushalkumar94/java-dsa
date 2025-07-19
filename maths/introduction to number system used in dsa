@@ -85,3 +85,11 @@ Integer.toBinaryString(n);      // Decimal → Binary (String)
 Integer.parseInt("1010", 2);    // Binary → Decimal
 Integer.toOctalString(n);       // Decimal → Octal
 Integer.toHexString(n);         // Decimal → Hex
+
+
+
+
+// also in this i made this file on the git hub and practices the concept of pull 
+// this note is just to see the changes and i will push it on git againa 
+// so remember  the steps add. commit push 
+// also before the steps above don't forget to save the file 
