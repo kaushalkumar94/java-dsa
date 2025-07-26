@@ -14,5 +14,12 @@ public class stacks {
         System.out.println(st + "\t" + st.peek()+st.size());
         st.pop();
         System.out.println(st + "\t" + st.size());
+        st.pop();
+        st.pop();
+        st.pop();
+        System.out.println(st);
+        st.pop();// this pop will throw a warining cause the stack is underflow means empty 
+        
+
     }
 }
