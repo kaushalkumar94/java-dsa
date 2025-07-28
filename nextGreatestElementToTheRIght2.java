@@ -7,7 +7,7 @@ public class nextGreatestElementToTheRIght2 {
         StringBuilder sb = new StringBuilder();
         for (int val : a) {
             sb.append(val + "\n");
-        }// may be i was 2nd choice right ??
+        }// may be i was 2nd choice right ???
         System.out.println(sb);
     }
 
