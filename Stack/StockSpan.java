@@ -16,6 +16,10 @@ public class StockSpan {
         int n = Integer.parseInt(bf.readLine());
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9fe13c (Re-added StockSpan and nextGreatestElementToTheRIght2 files)
             a[i] = Integer.parseInt(bf.readLine());
         }
 
@@ -28,6 +32,7 @@ public class StockSpan {
         Stack<Integer> st = new Stack<>();
         st.push(0);
         span[0] = 1;
+<<<<<<< HEAD
 
         for (int i = 1; i < arr.length; i++) {
             while (!st.isEmpty() && arr[i] >= arr[st.peek()]) {
@@ -45,4 +50,24 @@ public class StockSpan {
 
         return span;
     }
+=======
+        for (int i = 1; i < arr.length; i++) {
+            // - a +
+            while (st.size() > 0 && arr[i] > arr[st.peek()]) {
+                st.pop();
+                if (st.size() == 0) {
+                    span[i] = i + 1;
+                } else {
+                    span[i] = i - st.peek();
+                }
+                st.push(i);
+
+            }
+
+        }
+        return span;
+
+    }
+
+>>>>>>> f9fe13c (Re-added StockSpan and nextGreatestElementToTheRIght2 files)
 }
