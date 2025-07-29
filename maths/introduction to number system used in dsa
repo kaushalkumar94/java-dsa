@@ -1,0 +1,95 @@
+🔢 Number Systems in DSA
+📌 Why It Matters in DSA?
+Used in bit manipulation, memory representation, base conversions
+
+Frequently seen in problems like:
+
+Counting set bits
+
+Checking power of 2
+
+Binary addition/multiplication
+
+Base conversion problems
+
+💡 Common Number Systems
+1. Decimal (Base-10)
+Regular number system (what we use daily)
+
+Digits: 0-9
+
+Each digit is a power of 10
+
+Example:
+123 = 1×10² + 2×10¹ + 3×10⁰ = 100 + 20 + 3 = 123
+
+2. Binary (Base-2)
+Used in computers & digital circuits
+
+Digits: 0, 1
+
+Each digit is a power of 2
+
+Example:
+1011 = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 8 + 0 + 2 + 1 = 11 (Decimal)
+
+Applications in DSA:
+
+Bitwise operations
+
+Counting bits
+
+Fast exponentiation
+
+3. Octal (Base-8)
+Digits: 0-7
+
+Rare but used for compact binary representation (every 3 binary bits = 1 octal digit)
+
+Example:
+745 (Octal) = 7×8² + 4×8¹ + 5×8⁰ = 448 + 32 + 5 = 485 (Decimal)
+
+Note: Less common in DSA than binary/decimal/hex
+
+4. Hexadecimal (Base-16)
+Digits: 0-9 and A-F (A=10, B=11, ..., F=15)
+
+Used in memory addresses, color codes, hashing
+
+Example:
+1F = 1×16¹ + 15×16⁰ = 16 + 15 = 31 (Decimal)
+
+🔁 Common Conversions
+From → To	Method
+Decimal → Binary	Divide by 2, store remainders in reverse
+Binary → Decimal	Multiply bits by powers of 2
+Decimal → Octal	Divide by 8
+Decimal → Hex	Divide by 16
+Binary → Octal	Group 3 bits from right
+Binary → Hex	Group 4 bits from right
+
+🧠 Interview-Worthy Concepts
+Concept	Use Case
+Binary to Decimal	Base conversion problems
+Count Set Bits (Brian Kernighan’s Algo)	Bit manipulation
+Check if Power of 2	n & (n - 1) == 0 trick
+Bitmasking	Subsets, toggling bits, DP problems
+XOR properties	Finding missing/single number
+Binary Search (in sorted data)	Uses binary logic indirectly
+
+✅ Must-Know Functions in Java
+java
+Copy
+Edit
+Integer.toBinaryString(n);      // Decimal → Binary (String)
+Integer.parseInt("1010", 2);    // Binary → Decimal
+Integer.toOctalString(n);       // Decimal → Octal
+Integer.toHexString(n);         // Decimal → Hex
+
+
+
+
+// also in this i made this file on the git hub and practices the concept of pull 
+// this note is just to see the changes and i will push it on git againa 
+// so remember  the steps add. commit push 
+// also before the steps above don't forget to save the file 
