@@ -53,17 +53,6 @@ public class LargestAreaOfHistogram {
             st.push(i);
         }
 
-        for (int k = arr.length - 2; k >= 0; k--) {
-            while (st.size() > 0 && arr[k] < arr[st.peek()]) {
-                st.pop();
-            }
-            if (st.size() == 0) {
-                rb[k] = arr.length;
-            } else {
-                rb[k] = st.peek();
-            }
-            st.push(k);
-        }
 
         int maxArea = 0;
         for (int j = 0; j < arr.length; j++) {
